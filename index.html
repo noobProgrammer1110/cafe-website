@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <title>Project 0010 - Wave Cafe</title>
+</head>
+
+<body>
+    <!-- FULL CONTENT OF WEBSITE IS IN CONTAINER  -->
+    <section class="container">
+        <video autoplay muted loop >
+            <source src="./video/wave-cafe-video-bg.mp4" type="video/mp4">
+        </video>
+
+        <!-- CONTENT OF THIS WEBSITE EXCEPT FOOTER ==> ITS LIKE MAIN -->
+        <section class="content d-grid">
+
+            <!-- THIS SECTION IS FOR LEFT AND MAIN MENU -->
+            <section class="menu">
+                <ul class="menu-list d-grid">
+                    <li class="menu-list-item btn d-flex logo"><i class="fa fa-coffee"></i>Wave Cafe</li>
+                    <li class="menu-list-item btn d-flex menu-list-item-active"><i class="fas fa-mug-hot"></i>Drink Menu</li>
+                    <li class="menu-list-item btn d-flex"><i class="fa fa-group"></i>About Us</li>
+                    <li class="menu-list-item btn d-flex"><i class="fa fa-glass"></i>Special Items</li>
+                    <li class="menu-list-item btn d-flex"><i class="fa fa-comments"></i>Contact</li>
+                </ul>
+            </section>
+
+            <!-- THIS IS A EMPTY SECTION. BECAUSE SECTION MENU HAS FIXED POSITION AND HAS NO WEIGHT. -->
+            <section></section>
+
+            <!-- DIFFERENT MENU THAT SHOWS IN THE RIGHT OF THE PAGE OR DOWN WHILE SCREEN SMALLER -->
+            <section class="options">
+
+                <!-- CONTENT OF DRINK MENU -->
+                <section class="drink-menus option d-grid">
+                    <section class="choices">
+                        <ul class="d-flex light-black-bg">
+                            <li class="drink-menu-header drink-menu-active">Iced Coffee</li>
+                            <li class="drink-menu-header">Hot Coffee</li>
+                            <li class="drink-menu-header">Fruit Juice</li>
+                        </ul>
+                    </section>
+                    <section class="coffee-menu iced-coffee">
+                        <ul class="d-grid">
+                            <li class="drink-items d-flex">
+                                <img src="./images/iced-americano.png" alt="iced-americano">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Iced Americano</h4>
+                                        <span class="light-blue-color">$10.25</span>
+                                    </div>
+                                    <p>Here is a short description for the first item. Wave Cafe Template is provided by Tooplate.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/iced-cappuccino.png" alt="iced-cappuccino">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Iced Cappuccino</h4>
+                                        <span class="light-blue-color">$12.50</span>
+                                    </div>
+                                    <p>Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/iced-espresso.png" alt="iced-espresso">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Iced Espresso</h4>
+                                        <span class="light-blue-color">$14.25</span>
+                                    </div>
+                                    <p>You are not permitted to redistribute this template ZIP file on any other template websites.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/iced-latte.png" alt="iced-latte">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Iced Latte</h4>
+                                        <span class="light-blue-color">$11.50</span>
+                                    </div>
+                                    <p>Contents are organized into 3 tabs.<br>Please contact Tooplate if you have anything to ask.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </section>
+
+                    <section class="coffee-menu hot-coffee d-none">
+                        <ul class="d-grid">
+                            <li class="drink-items d-flex">
+                                <img src="./images/hot-americano.png" alt="Americano">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Hot Americano</h4>
+                                        <span class="light-blue-color">$8.50</span>
+                                    </div>
+                                    <p>Here is a short description for the item along with a squared thumbnail.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/hot-cappuccino.png" alt="Cappuccino">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Hot Cappuccino</h4>
+                                        <span class="light-blue-color">$9.50</span>
+                                    </div>
+                                    <p>Here is a list of 4 items that can add more as you need. Only content area will
+                                        be scrolling.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/hot-espresso.png" alt="Espresso">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Hot Espresso</h4>
+                                        <span class="light-blue-color">$7.50</span>
+                                    </div>
+                                    <p>Left side logo and main menu are fixed. The video background is fixed.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/hot-latte.png" alt="Latte">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Hot Latte</h4>
+                                        <span class="light-blue-color">$6.50</span>
+                                    </div>
+                                    <p>Page contents are organized into 3 tabs to show different lists of items.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </section>
+
+                    <section class="coffee-menu fruit-juice d-none">
+                        <ul class="d-grid">
+                            <li class="drink-items d-flex">
+                                <img src="./images/smoothie-1.png" alt="smoothie-1">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Strawberry Smoothie</h4>
+                                        <span class="light-blue-color">$12.50</span>
+                                    </div>
+                                    <p>Here is a short description for the item along with a squared thumbnail.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/smoothie-2.png" alt="smoothie-2">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Red Berry Smoothie</h4>
+                                        <span class="light-blue-color">$14.50</span>
+                                    </div>
+                                    <p>Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/smoothie-3.png" alt="smoothie-3">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Pineapple Smoothie</h4>
+                                        <span class="light-blue-color">$16.50</span>
+                                    </div>
+                                    <p>Left side logo and main menu are fixed. The video background is fixed.</p>
+                                </div>
+                            </li>
+
+                            <li class="drink-items d-flex">
+                                <img src="./images/smoothie-4.png" alt="smoothie-4">
+                                <div class="info-drink light-black-bg d-grid">
+                                    <div class="d-flex header-price">
+                                        <h4>Spinach Smoothie</h4>
+                                        <span class="light-blue-color">$18.50</span>
+                                    </div>
+                                    <p>You are not allowed to redistribute the template ZIP file on other template sites.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </section>
+                </section>
+
+                <!-- CONTENT OF ABOUT US -->
+                <section class="about-us option d-none">
+                    <article class="about light-black-bg">
+                        <div class="first-info first-info-article">
+                            <img src="./images/about-1.png" alt="about-1">
+                            <div class="first-descript">
+                                <h3>About Wave Cafe</h3>
+                                <p>Wave Cafe is a one-page video background HTML CSS template from Tooplate. You can use this for your business websites.</p>
+                            </div>
+                        </div>
+                        <p>You can also use this for your client websites which you get paid for your website services. Please tell your friends about us.</p>
+                    </article>
+                    
+                    <article class="about light-black-bg">
+                        <div class="first-info second-info-article">
+                            <div class="second-descript">
+                                <h3>How We Began</h3>
+                                <p>If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>
+                            </div>
+                            <img src="./images/about-2.png" alt="about-2">
+                        </div>
+                        <p class="second-descript">Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+                    </article>
+                </section>
+
+                <!-- CONTENT OF SPECIAL ITEMS -->
+                <section class="special-items option d-none">
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-01.jpg" alt="special-01">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">First Special Item</h3>
+                            <p class="special-descript">Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>
+                        </div>
+                    </article>
+
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-02.jpg" alt="special-02">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">Second Special Item</h3>
+                            <p class="special-descript">You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>
+                        </div>
+                    </article>
+
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-03.jpg" alt="special-03">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">Third Special Item</h3>
+                            <p class="special-descript">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>
+                        </div>
+                    </article>
+
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-04.jpg" alt="special-04">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">Fourth Special Item</h3>
+                            <p class="special-descript">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>
+                        </div>
+                    </article>
+
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-05.jpg" alt="special-05">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">Fifth Special Item</h3>
+                            <p class="special-descript">Here is a short text description for sixth item. This text is four lines.</p>
+                        </div>
+                    </article>
+
+                    <article class="spc-item d-grid">
+                        <img class="special-image" src="./images/special-06.jpg" alt="special-06">
+                        <div class="special-info light-black-bg">
+                            <h3 class="special-header blue-option-header">Sixth Special Item</h3>
+                            <p class="special-descript">Curabitur eget erat sit amet sapien aliquet vulputate quis sed arcu.</p>
+                        </div>
+                    </article>
+
+                    
+                </section>
+                
+                <!-- CONTENT OF CONTACT -->
+                <section class="contact option d-none">
+                    <div class="light-black-bg">
+                        <h3 class="contact-header blue-option-header">Contact Wave</h3>
+                        <p class="contact-descript">Wave Cafe Template has a video background. You can use this layout for your websites. Please contact Tooplate's Facebook page. Tell your friends about our website.</p>
+                    </div>
+
+                    <div class="contact-form light-black-bg">
+                        <form class="d-grid">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <textarea name="" id="" cols="30" rows="6" placeholder="Message"></textarea>
+                            <input type="submit" value="Submit" class="submit-btn btn">
+                        </form>
+                    </div>
+
+                </section>
+            </section>
+
+            
+
+        </section>
+
+        <footer class="d-flex">
+
+            <!-- LEFT SIDE OF FOOTER -->
+            <section class="copyright d-flex light-black-bg">
+                <P>Copyright 2020 Wave Cafe</P>
+                <p>Design: <a href="https://www.tooplate.com/">Tooplate</a></p>
+            </section>
+
+            <!-- RIGHT SIDE OF FOOTER THAT IS PAUSE BUTTON -->
+            <section class="pause light-black-bg">
+                <i class="fa fa-pause" id="plpa"></i>
+            </section>
+        </footer>
+
+    </section>
+</body>
+<script src="./js/javaScript.js"></script>
+</html>

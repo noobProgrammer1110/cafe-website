@@ -1,0 +1,104 @@
+var menu_item = document.querySelectorAll(".menu-list-item");
+var options = document.querySelectorAll(".option");
+var menu_header = document.querySelectorAll(".drink-menu-header");
+var menu_items = document.querySelectorAll(".coffee-menu");
+var pause_btn = document.querySelector(".pause");
+var my_video = document.querySelector("video");
+var p_btn = document.getElementById("plpa");
+var checkVideo = 1;
+
+// SHOW CONTENT OF OPTIONS WHILE CLICK ON MAIN MENU
+menu_item[1].addEventListener("click", function () { ActiveLMenu(1, 0) })
+menu_item[2].addEventListener("click", function () { ActiveLMenu(2, 1) })
+menu_item[3].addEventListener("click", function () { ActiveLMenu(3, 2) })
+menu_item[4].addEventListener("click", function () { ActiveLMenu(4, 3) })
+
+
+// SHOW DIFFERENT TYPE OF DRINK WHILE CLICK ON HEADER MENU
+menu_header[0].addEventListener("click" , function () { ShowCoffeeMenu(0)})
+menu_header[1].addEventListener("click" , function () { ShowCoffeeMenu(1)})
+menu_header[2].addEventListener("click" , function () { ShowCoffeeMenu(2)})
+
+
+// THIS IS ABOUT PLAY AND PAUSE BACKGROUND-VIDEO
+pause_btn.addEventListener("click" , PlayPause);
+
+
+// THIS FUNCTION IS FOR SHOW CONTENT OF ANY OPTION WHILE CLICK ON MAIN MENU
+function ActiveLMenu(choose_menu, show_menu) {
+    for (var i = 1; i < menu_item.length; i++) {
+        var menu_class_list = menu_item[i].classList;
+        menu_class_list = menu_class_list.toString();
+
+        if (menu_class_list.includes("menu-list-item-active")) {
+            menu_item[i].classList.toggle("menu-list-item-active");
+        }
+    }
+
+    for (var j = 0; j < options.length; j++) {
+        var option_class = options[j].classList;
+        option_class = option_class.toString();
+
+        if (option_class.includes("d-none")) {
+            // DO NOTHING
+        }
+        else {
+            options[j].classList.toggle("d-none");
+        }
+
+    }
+
+    var dest_option = options[show_menu].classList;
+    dest_option = dest_option.toString();
+    if (dest_option.includes("d-grid")) {
+        //DO NOTHING
+    }
+    else {
+        
+        options[show_menu].classList.toggle("d-grid");
+    }
+
+    options[show_menu].classList.toggle("d-none");
+    menu_item[choose_menu].classList.toggle("menu-list-item-active");
+}
+
+
+// THIS FUNCTION IS FOR SHOW DIFFERENT TYPE OF DRINK WHILE CLICK ON HEADER
+function ShowCoffeeMenu(menu){
+    for(var i=0 ; i<menu_header.length ; i++){
+        var menu_h = menu_header[i].classList;
+        var items = menu_items[i].classList;
+        menu_h = menu_h.toString();
+        items = items.toString();
+
+        if(menu_h.includes("drink-menu-active")){
+            menu_header[i].classList.toggle("drink-menu-active");
+        }
+
+        if(items.includes("d-none")){
+            //DO NOTHING
+        }
+        else{
+            menu_items[i].classList.toggle("d-none");
+        }
+    }
+
+    menu_header[menu].classList.toggle("drink-menu-active");
+    menu_items[menu].classList.toggle("d-none");
+}
+
+
+// THIS FUNCTION IS FOR PLAY AND PAUSE BACKGROUND VIDEO WHILE CLICK ON BUTTON
+function PlayPause(){
+    if(checkVideo === 1){
+        my_video.pause();
+        checkVideo = 0;
+    }
+    else{
+        my_video.play();
+        checkVideo = 1;
+    }
+
+    p_btn.classList.toggle("fa-pause");
+    p_btn.classList.toggle("fa-play");
+}

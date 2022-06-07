@@ -1,0 +1,336 @@
+/* ======================================================================
+PREDEFINED ATTRIBUTES
+====================================================================== */
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.white-color{
+    color: #fff;
+}
+
+.light-blue-color{
+    color: #96FEFF;
+}
+
+.sky-color{
+    color: #009999;
+}
+
+.blue-option-header{
+    color: #33CCCC;
+}
+
+.bg-sky{
+    background-color: #009999;
+}
+
+.btn{
+    color: #009999;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+i{
+    color: inherit;
+}
+
+.btn:hover{
+    color: #fff;
+    background-color: #009999;
+    cursor: pointer;
+}
+
+.light-black-bg{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.d-grid{
+    display: grid;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
+.container{
+    padding: 25px;
+}
+
+.content{
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.pos-fixed{
+    position: fixed;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ======================================================================
+XX PREDEFINED ATTRIBUTES XX
+====================================================================== */
+
+/* ======================================================================
+MENU
+====================================================================== */
+.menu-list{
+    gap: 10px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 40px!important;
+}
+
+.menu-list-item{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.menu-list-item i{
+    margin-right: 10px;
+}
+
+.menu-list-item-active{
+    color: #fff;
+    background-color: #009999;
+}
+/* ======================================================================
+XX MENU XX
+====================================================================== */
+
+/* ======================================================================
+DRINK MENU
+====================================================================== */
+.choices ul{
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+
+.choices ul li{
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 5px solid transparent;
+}
+
+.choices ul li:hover{
+    color: #96FEFF;
+    border-bottom: 5px solid #96FEFF;
+}
+
+.drink-items{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.drink-items img{
+    width: 25%;
+    height: 90%;;
+}
+
+.info-drink{
+    width: 75%;
+    height: 100%;
+    padding: 20px 10px;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+.info-drink p{
+    line-height: inherit;
+}
+
+.header-price{
+    justify-content: space-between;
+}
+
+.header-price h4{
+    font-size: 20px;
+}
+
+.drink-menu-active{
+    color: #96FEFF;
+    border-bottom: 5px solid #96FEFF!important;
+}
+/* ======================================================================
+XX DRINK MENU XX
+====================================================================== */
+
+/* ======================================================================
+ABOUT US
+====================================================================== */
+.about-us{
+
+}
+
+.about{
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.first-info-article{
+    margin-bottom: 40px;
+}
+
+.second-info-article{
+    margin-bottom: 20px;
+}
+
+.about h3{
+    color: #33CCCC;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.about p{
+    line-height: 28px;
+}
+
+.about img{
+    margin: 20px 0;
+}
+/* ======================================================================
+XX ABOUT US XX
+====================================================================== */
+
+/* ======================================================================
+SPECIAL ITEMS
+====================================================================== */
+.special-items{
+    gap: 30px;
+}
+.special-image{
+    width: 100%;
+}
+
+.special-info{
+    width: 100%;
+    padding: 20px;
+}
+
+.special-header{
+    margin-bottom: 15px;
+}
+
+.special-descript{
+    line-height: 28px;
+}
+/* ======================================================================
+XX SPECIAL ITEMS XX
+====================================================================== */
+
+/* ======================================================================
+CONTACT
+====================================================================== */
+.contact{
+    justify-items: end!important;
+}
+.contact div{
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.contact-header{
+    margin-bottom: 15px;
+}
+
+.contact-descript{
+    line-height: 28px;
+}
+
+.contact-form form{
+    justify-content: center;
+}
+
+.contact-form form input[type=text] , input[type=email] , textarea{
+    background-color: transparent;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-form form input[type=submit]{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.contact-form ::placeholder{
+    color: #fff;
+}
+
+.submit-btn{
+    width: 100px;
+    justify-self: end;
+}
+/* ======================================================================
+XX CONTACT XX
+====================================================================== */
+
+/* ======================================================================
+FOOTER
+====================================================================== */
+footer{
+    justify-content: space-between;
+}
+
+footer section{
+    padding: 15px;
+}
+
+.copyright p:first-of-type{
+    border-right: 2px solid #fff;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.pause{
+    position: fixed;
+    z-index: 1000;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+}
+/* ======================================================================
+XX FOOTER XX
+====================================================================== */

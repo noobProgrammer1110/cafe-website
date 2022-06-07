@@ -1,0 +1,108 @@
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .menu-list{
+        grid-template-columns: repeat(2 , auto);
+    }
+
+    .menu-list-item:first-of-type{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .first-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-descript{
+        margin-left: 20px;
+    }
+
+    .second-descript{
+        margin-right: 20px;
+    }
+
+    .special-image{
+        width: 320px;
+    }
+
+    .special-info{
+        width: 320px;
+    }
+
+    .contact-form{
+        width: 380px!important;
+    }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .content{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .menu{
+        position: fixed;
+    }
+
+    .drink-items{
+        flex-direction: row;
+    }
+
+    .info-drink{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .first-info{
+        display: block;
+    }
+
+    .first-descript{
+        margin-left: 0;
+    }
+
+    .second-descript{
+        margin-right: 0;
+    }
+
+    .contact-form{
+        width: 100%!important;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .menu{
+        width: 440px;
+    }
+
+    .first-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-descript{
+        margin-left: 20px;
+    }
+
+    .second-descript{
+        margin-right: 20px;
+    }
+
+    .contact-form{
+        width: 380px!important;
+    }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+    .special-items{
+        grid-template-columns: repeat(2 , auto);
+    }
+}
